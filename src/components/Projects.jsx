@@ -65,20 +65,21 @@ const Projects = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6 text-center">My Projects</h1>
-
-      {/* nav links */}
-      <div className="flex gap-4 justify-end">
-        <Link to="/" className="cursor-pointer text-blue-600 hover:underline">
+       {/* nav links */}
+       <div className="flex gap-4 justify-center mb-4">
+        <Link to="/" className="cursor-pointer p-2 bg-gray-200 rounded-md hover:underline">
           Home
         </Link>
         <Link
           to="/project"
-          className="cursor-pointer text-blue-600 hover:underline"
+          className="cursor-pointer p-2 bg-gray-200 rounded-md hover:underline"
         >
           Add Project
         </Link>
       </div>
+      <h1 className="text-2xl font-bold mb-6 text-center">My Projects</h1>
+
+     
 
       {projects.length > 0 ? (
         <div className="grid gap-6 md:grid-cols-2">
